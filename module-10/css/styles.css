@@ -193,7 +193,9 @@ p {
     opacity: 1;
 }
 
-.menu__item-link:focus {
+.logotype:focus,
+.menu__item-link:focus,
+.market__item-link:focus {
     outline: none;
 }
 
@@ -228,11 +230,13 @@ p {
     fill: rgb(255, 255, 255);
 }
 
-.market__item-link .market__item-link--cart:hover {
+.market__item-link:hover .market__item-link--cart,
+.market__item-link:focus .market__item-link--cart {
     fill: rgb(252, 227, 138);
 }
 
-.market__item-link .market__item-link--search:hover {
+.market__item-link:hover .market__item-link--search,
+.market__item-link:focus .market__item-link--search {
     fill: rgb(252, 227, 138);
 }
 
